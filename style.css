@@ -11,6 +11,9 @@
   --headline-color: #393939;
   --primary-text-color: #111111;
   --secondary-text-color: #ffffff;
+
+  --primary-font-family: roboto, sans-serif;
+  --secondary-font-family: montserrat, sans-serif;
 }
 
 html {
@@ -19,5 +22,33 @@ html {
 
 body {
   margin: 0;
-  font-family: montserrat;
+  font-family: var(--primary-font-family);
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 100;
+  color: #393939;
+}
+
+.input {
+  border: none;
+  outline: none;
+  font-size: 3em;
+  border-bottom: 3px solid rgba(52, 45, 47, 0.38);
+}
+
+.input::placeholder {
+  color: #393939;
+  opacity: 21%;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 0.2em;
+}
+
+input[type="radio"]:checked + label {
+  color: var(--primary-color);
 }

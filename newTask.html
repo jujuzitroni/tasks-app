@@ -10,15 +10,14 @@
   <body>
     <form action="">
       <h2>Add new</h2>
-      <input type="text" placeholder="Enter Task" />
+      <input class="input" type="text" placeholder="Enter Task" />
       <h3>When</h3>
-      <label>Today <input type="radio" name="date" value="today" /> </label>
-      <label
-        >Tomorrow <input type="radio" name="date" value="tomorrow" />
-      </label>
-      <label
-        >Select date <input type="radio" name="date" value="selectDate" />
-      </label>
+      <input type="radio" name="date" value="today" id="today" />
+      <label for="today">Today </label>
+      <input type="radio" name="date" value="tomorrow" id="tomorrow" />
+      <label for="tomorrow">Tomorrow </label>
+      <input type="radio" name="date" value="selectDate" id="selectDate" />
+      <label for="selectDate">Select date </label>
       <input type="submit" value="Add task" />
     </form>
   </body>
