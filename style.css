@@ -29,12 +29,13 @@ body {
 .form {
   display: grid;
   position: relative;
+  align-content: center;
   height: 100%;
   row-gap: 3em;
   padding: 1.5em 0 6.2em 1.5em;
 }
 
-.form h2 {
+.form-titel {
   font-size: 3rem;
   font-weight: 100;
   color: #393939;
@@ -53,7 +54,7 @@ body {
   opacity: 21%;
 }
 
-h3 {
+.form-subtitel {
   text-transform: uppercase;
   font-size: 1em;
   letter-spacing: 0.2em;
@@ -62,6 +63,8 @@ h3 {
 .radio-group {
   display: flex;
   justify-content: space-around;
+  background-color: rgba(212, 212, 212, 0.1);
+  padding: 2.5em 0;
 }
 
 .radio-group__input {
