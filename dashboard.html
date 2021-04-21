@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="style.css" />
     <title>Task Dashboard</title>
   </head>
-  <body>
-    <button><img src="assets/burger-menu.svg" alt="burger-menu" /></button>
-    <section>
-      <h2 class="form-titel">Tasks</h2>
-      <button><img src="assets/notif.svg" alt="notification bell" /></button>
-    </section>
-    <section>
+  <body class="dashboard">
+    <button class="button">
+      <img src="assets/burger-menu.svg" alt="burger-menu" />
+    </button>
+
+    <h2 class="form-titel">Tasks</h2>
+    <button class="button">
+      <img src="assets/notif.svg" alt="notification bell" />
+    </button>
+
+    <section class="radio-group-dashboard">
       <input class="radio-group__input" type="radio" name="date" id="today" />
       <label for="today">Today</label>
       <input
@@ -31,6 +35,41 @@
       />
       <label for="selectDate">Select Date</label>
     </section>
-    <section></section>
+    <section class="checkbox-group">
+      <label>
+        <input
+          class="checkbox-group__input"
+          type="checkbox"
+          name=""
+          id=""
+        />book appointment with
+      </label>
+      <label>
+        <input
+          class="checkbox-group__input"
+          type="checkbox"
+          name=""
+          id=""
+        />upload cat meme
+      </label>
+      <label>
+        <input
+          class="checkbox-group__input"
+          type="checkbox"
+          name=""
+          id=""
+        />complete elephant illu
+      </label>
+      <label> <input type="checkbox" name="" id="" />buy cake </label>
+      <label>
+        <input
+          class="checkbox-group__input"
+          type="checkbox"
+          name=""
+          id=""
+        />attend Ux conf
+      </label>
+    </section>
+    <a href=""><img src="assets/add-task.svg" alt="" /></a>
   </body>
 </html>

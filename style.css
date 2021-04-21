@@ -94,3 +94,17 @@ body {
   width: 100%;
   padding: 1.3em 2em;
 }
+
+.dashboard {
+  display: grid;
+}
+
+.button {
+  border: none;
+  background-color: var(--secondary-text-color);
+}
+
+.radio-group-dashboard {
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+}
