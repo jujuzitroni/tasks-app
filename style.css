@@ -11,6 +11,9 @@
   --headline-color: #393939;
   --primary-text-color: #111111;
   --secondary-text-color: #ffffff;
+
+  --primary-font-family: roboto, sans-serif;
+  --secondary-font-family: montserrat, sans-serif;
 }
 
 html {
@@ -19,5 +22,75 @@ html {
 
 body {
   margin: 0;
-  font-family: montserrat;
+  height: 100vh;
+  font-family: var(--primary-font-family);
+}
+
+.form {
+  display: grid;
+  position: relative;
+  align-content: center;
+  height: 100%;
+  row-gap: 3em;
+  padding: 1.5em 0 6.2em 1.5em;
+}
+
+.form-titel {
+  font-size: 3rem;
+  font-weight: 100;
+  color: #393939;
+}
+
+.text-input {
+  width: 100%;
+  border: none;
+  font-size: 3em;
+  border-bottom: 3px solid rgba(52, 45, 47, 0.38);
+  padding-right: 0.5em;
+}
+
+.text-input::placeholder {
+  color: #393939;
+  opacity: 21%;
+}
+
+.form-subtitel {
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 0.2em;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(212, 212, 212, 0.1);
+  padding: 2.5em 0;
+}
+
+.radio-group__input {
+  opacity: 0;
+  position: absolute;
+}
+.radio-group__input + label {
+  color: var(--headline-color);
+  opacity: 68%;
+}
+
+.radio-group__input:checked + label {
+  color: var(--primary-color);
+}
+
+.radio-group__input:focus-visible + label {
+  outline: thin solid;
+}
+
+.form__submit {
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--secondary-text-color);
+  font-size: 1.5em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1.3em 2em;
 }
