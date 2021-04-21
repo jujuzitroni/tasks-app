@@ -71,6 +71,10 @@ body {
   opacity: 0;
   position: absolute;
 }
+.radio-group__input + label {
+  color: var(--headline-color);
+  opacity: 68%;
+}
 
 .radio-group__input:checked + label {
   color: var(--primary-color);
