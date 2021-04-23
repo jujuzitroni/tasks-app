@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Task Dashboard</title>
+  </head>
+  <body>
+    <main class="dashboard">
+      <button class="dashboard__burger-menu">
+        <img src="assets/burger-menu.svg" alt="burger-menu" />
+      </button>
+
+      <h2 class="dashboard__header">Tasks</h2>
+      <button class="dashboard__bell">
+        <img src="assets/notif.svg" alt="notification bell" />
+      </button>
+
+      <section class="radio-group-dashboard">
+        <input
+          class="radio-group__input"
+          type="radio"
+          name="date"
+          id="selectDate"
+        />
+        <label for="selectDate">Select Date</label>
+        <input
+          class="radio-group__input"
+          type="radio"
+          name="date"
+          id="tomorrow"
+        />
+        <label for="tomorrow">Tomorrow</label>
+        <input class="radio-group__input" type="radio" name="date" id="today" />
+        <label for="today">Today</label>
+      </section>
+      <section class="checkbox-group">
+        <label>
+          <input class="checkbox-group__input" type="checkbox" name="" id="" />
+          <span> book appointment with</span>
+        </label>
+        <label>
+          <input class="checkbox-group__input" type="checkbox" name="" id="" />
+          <span> upload cat meme</span>
+        </label>
+        <label>
+          <input class="checkbox-group__input" type="checkbox" name="" id="" />
+          <span> complete elephant illu</span>
+        </label>
+        <label>
+          <input class="checkbox-group__input" type="checkbox" name="" id="" />
+          <span> buy cake</span>
+        </label>
+        <label>
+          <input class="checkbox-group__input" type="checkbox" name="" id="" />
+          <span> attend Ux conf</span>
+        </label>
+      </section>
+      <a class="dashboard__new-task" href="newTask.html"
+        ><img src="assets/add-task.svg" alt=""
+      /></a>
+    </main>
+  </body>
+</html>
