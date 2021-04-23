@@ -168,3 +168,49 @@ body {
   padding: 2em 3em;
   border-top-left-radius: 0.5em;
 }
+
+/*///////////////
+MENU PAGE
+///////////////*/
+
+.menu {
+  background-color: var(--secondary-color);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-title {
+  margin: 0;
+  color: var(--secondary-text-color);
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  font-family: var(--secondary-font-family);
+}
+
+.menu-close-button {
+  background: transparent;
+  border: none;
+}
+
+.menu-list {
+  font-family: var(--primary-font-family);
+}
+
+.menu-list a {
+  text-decoration: none;
+  color: var(--secondary-text-color);
+}
+
+.menu-list ul {
+  list-style: none;
+}
+
+.menu-list__nav {
+  font-size: 2em;
+}
+
+/* .menu-list__meta {
+  font-size: 1em;
+} */
