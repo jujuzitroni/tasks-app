@@ -176,8 +176,15 @@ MENU PAGE
 .menu {
   background-color: var(--secondary-color);
   height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr 1fr;
+}
+
+.menu-header {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 4em 2em;
 }
 
 .menu-title {
@@ -192,10 +199,13 @@ MENU PAGE
 .menu-close-button {
   background: transparent;
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .menu-list {
   font-family: var(--primary-font-family);
+  margin-left: 2em;
 }
 
 .menu-list a {
@@ -208,9 +218,15 @@ MENU PAGE
 }
 
 .menu-list__nav {
+  display: grid;
+  gap: 1em;
   font-size: 2em;
+  letter-spacing: 0.1em;
+  padding: 0;
 }
 
-/* .menu-list__meta {
-  font-size: 1em;
-} */
+.menu-list__meta {
+  display: grid;
+  gap: 2em;
+  padding: 0;
+}
