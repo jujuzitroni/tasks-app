@@ -10,7 +10,9 @@
   <body>
     <main class="dashboard">
       <button class="dashboard__burger-menu">
-        <img src="assets/burger-menu.svg" alt="burger-menu" />
+        <a href="#menu-modal">
+          <img src="assets/burger-menu.svg" alt="burger-menu" />
+        </a>
       </button>
 
       <h2 class="dashboard__header">Tasks</h2>
@@ -62,48 +64,48 @@
         ><img src="assets/add-task.svg" alt=""
       /></a>
     </main>
-    <!------------------------------------------------
- ------------MENU SECTION START -------------
-------------------------------------------------->
-    <section class="menu-header">
-      <h3 class="menu-title">Task App</h3>
-      <button class="menu-close-button">
-        <img class="a" src="assets/Line-1.svg" alt="" />
-        <img class="b" src="assets/Line.svg" alt="" />
-      </button>
-    </section>
-    <section class="menu-list">
-      <ul class="menu-list__nav">
-        <li>
-          <a href="./dashboard.html">Dashboard</a>
-        </li>
-        <li>
-          <a href="">Calender</a>
-        </li>
-        <li>
-          <a href="">Categorize Tasks</a>
-        </li>
-        <li>
-          <a href="">Settings</a>
-        </li>
-      </ul>
-    </section>
+    <!--------------MENU SECTION START -------->
+    <aside class="menu" id="menu-modal">
+      <section class="menu-header">
+        <h3 class="menu-title">Task App</h3>
+        <button class="menu-close-button">
+          <a href="#">
+            <img class="a" src="assets/Line-1.svg" alt="" />
+            <img class="b" src="assets/Line.svg" alt="" />
+          </a>
+        </button>
+      </section>
+      <section class="menu-list">
+        <ul class="menu-list__nav">
+          <li>
+            <a href="./dashboard.html">Dashboard</a>
+          </li>
+          <li>
+            <a href="">Calender</a>
+          </li>
+          <li>
+            <a href="">Categorize Tasks</a>
+          </li>
+          <li>
+            <a href="">Settings</a>
+          </li>
+        </ul>
+      </section>
 
-    <section class="menu-list">
-      <ul class="menu-list__meta">
-        <li>
-          <a href="">About</a>
-        </li>
-        <li>
-          <a href="">Privacy Policy</a>
-        </li>
-        <li>
-          <a href="">License</a>
-        </li>
-      </ul>
-    </section>
-    <!------------------------------------------------
- ------------MENU SECTION END -------------
-------------------------------------------------->
+      <section class="menu-list">
+        <ul class="menu-list__meta">
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="">License</a>
+          </li>
+        </ul>
+      </section>
+    </aside>
+    <!----------MENU SECTION END ----->
   </body>
 </html>
