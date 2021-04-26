@@ -245,13 +245,13 @@ body {
   display: none;
 }
 
-aside {
+.menu {
   position: absolute;
   top: 0;
   left: -100%;
   transition: left 0.5s ease-in-out;
 }
 
-.dashboard__burger-checkbox:checked + aside {
+.dashboard__burger-checkbox:checked + .menu {
   left: 0;
 }
