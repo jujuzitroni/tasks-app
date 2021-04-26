@@ -9,10 +9,9 @@
   </head>
   <body>
     <main class="dashboard">
-      <button class="dashboard__burger-menu">
+      <label for="burger-checkbox" class="dashboard__burger-open">
         <img src="assets/burger-menu.svg" alt="burger-menu" />
-      </button>
-
+      </label>
       <h2 class="dashboard__header">Tasks</h2>
       <button class="dashboard__bell">
         <img src="assets/notif.svg" alt="notification bell" />
@@ -62,5 +61,51 @@
         ><img src="assets/add-task.svg" alt=""
       /></a>
     </main>
+    <!--------------MENU SECTION START -------->
+    <input
+      type="checkbox"
+      class="dashboard__burger-checkbox"
+      id="burger-checkbox"
+    />
+    <aside class="menu" id="menu-modal">
+      <section class="menu-header">
+        <h3 class="menu-title">Task App</h3>
+        <label for="burger-checkbox" class="dashboard__burger-close">
+          <img src="assets/line-1.svg" alt="" />
+          <img src="assets/line.svg" alt="" />
+        </label>
+      </section>
+      <section class="menu-list">
+        <ul class="menu-list__nav">
+          <li>
+            <a href="./dashboard.html">Dashboard</a>
+          </li>
+          <li>
+            <a href="">Calender</a>
+          </li>
+          <li>
+            <a href="">Categorize Tasks</a>
+          </li>
+          <li>
+            <a href="">Settings</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="menu-list">
+        <ul class="menu-list__meta">
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="">License</a>
+          </li>
+        </ul>
+      </section>
+    </aside>
+    <!----------MENU SECTION END ----->
   </body>
 </html>
