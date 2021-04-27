@@ -1,9 +1,10 @@
-// alert("testtest!!");
+const taskNameInput = document.querySelector(".text-input");
+const formElement = document.querySelector(".form");
 
-const submitButton = document.querySelector(".form__submit");
-
-submitButton.addEventListener("click", addTask);
-
-function addTask() {
-  alert("show task");
-}
+formElement.onsubmit = function (event) {
+  event.preventDefault();
+  const checkedDateSelector = document.querySelector(
+    ".radio-group__input:checked"
+  );
+  console.log(taskNameInput.value, checkedDateSelector.value);
+};
