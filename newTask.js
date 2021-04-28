@@ -30,6 +30,11 @@ formElement.onsubmit = function (event) {
     date: checkedDateSelector.value,
   };
 
-  const taskJSON = JSON.stringify(task);
-  localStorage.setItem("task", taskJSON);
+  const taskList = JSON.parse(localStorage.getItem("taskList"));
+  console.log(taskList);
+  taskList.push(task);
+  localStorage.setItem("taskList", JSON.stringify(taskList));
+
+  // const taskJSON = JSON.stringify(task);
+  // localStorage.setItem("task", taskJSON);
 };
