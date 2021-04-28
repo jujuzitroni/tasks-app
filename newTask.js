@@ -25,5 +25,10 @@ formElement.onsubmit = function (event) {
     return;
   }
 
-  console.log(taskNameInput.value, checkedDateSelector.value);
+  const task = {
+    name: taskNameInput.value,
+    date: checkedDateSelector.value,
+  };
+
+  console.log(task);
 };
