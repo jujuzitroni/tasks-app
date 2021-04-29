@@ -8,6 +8,9 @@ const formElement = document.querySelector(".form");
 //   );
 //   console.log(taskNameInput.value, checkedDateSelector.value);
 // };
+function goToPage(href) {
+  location.href = href;
+}
 
 formElement.onsubmit = function (event) {
   event.preventDefault();
@@ -30,10 +33,20 @@ formElement.onsubmit = function (event) {
     date: checkedDateSelector.value,
   };
 
-  const taskList = JSON.parse(localStorage.getItem("taskList"));
+  // macht das gleiche wie zeile 44: (const taskList = JSON.parse(localStorage.getItem("taskList")) || [];)
+  // const JSON = JSON.parse(localStorage.getItem("taskList"));
+  // if (!JSON) {
+  //   const taskList = [];
+  // } else {
+  //   const taskList = JSON;
+  // }
+
+  const taskList = JSON.parse(localStorage.getItem("taskList")) || [];
   console.log(taskList);
   taskList.push(task);
   localStorage.setItem("taskList", JSON.stringify(taskList));
+
+  goToPage("/dashboard.html");
 
   // const taskJSON = JSON.stringify(task);
   // localStorage.setItem("task", taskJSON);
