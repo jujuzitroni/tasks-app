@@ -25,9 +25,14 @@ function parseJSONFromLocalStorage(key, defaultValue) {
 // Get array with task objects from local storage
 const taskList = parseJSONFromLocalStorage("taskList", []);
 
+// call for function to create ALL tasks.
+createTaskList();
+
 // ////FILTER LIST VIA RADIO BUTTONS/////////
 function createTaskList(date) {
-  const filteredTaskList = taskList.filter((task) => task.date === date);
+  const filteredTaskList = taskList.filter(
+    (task) => task.date === date || date === undefined
+  );
 
   // Create task elements array consisting of HTML elements based on the amount of objects
   const taskElements = filteredTaskList.map(function (task) {
@@ -38,6 +43,10 @@ function createTaskList(date) {
   const taskListElement = document.querySelector(".checkbox-group");
 
   // Append all elements in task element to task list
+  //   taskListElement.append(...taskElements);
+
+  //   replace all labels with empty string so only the selected task.names(aka taskElements) are shown.
+  taskListElement.innerHTML = "";
   taskListElement.append(...taskElements);
 }
 
