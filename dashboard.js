@@ -60,9 +60,12 @@ function createTaskList(date) {
   // Append all elements in task element to task list
   //   taskListElement.append(...taskElements);
 
-  //   replace all labels with empty string so only the selected task.names(aka taskElements) are shown.
-  taskListElement.innerHTML = "";
+  removeAllHTMLChildren(taskListElement);
   taskListElement.append(...taskElements);
+}
+
+function removeAllHTMLChildren(element) {
+  element.innerHTML = "";
 }
 
 // select all date radio buttons
